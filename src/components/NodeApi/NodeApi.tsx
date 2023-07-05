@@ -6,10 +6,10 @@ export const NodeApi: FC = () => {
 
   useEffect(() => {
     (async () => {
-      const v = await version();
-      const p = await platform();
-      console.log("version: ", v);
-      console.log("platform: ", p);
+      const os = await version();
+      const kernel = await platform();
+      console.log("version: ", os);
+      console.log("platform: ", kernel);
     })();
   }, []);
 
